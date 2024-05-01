@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Mood Calendar</title>
+</head>
+
+<body>
+    <h2>2024 Mod Takvimi</h2>
+    <h4>Ruh halinize göre takviminizi renklendirin</h4>
+
+    <p>Modunu seç</p>
+
+    <div class="moods_container">
+        <button class="mood mood_1" id="mood_1">
+            <i class="fa-regular fa-face-grin-wide"></i>
+        </button>
+
+        <button class="mood mood_2" id="mood_2">
+            <i class="fa-regular fa-face-smile-beam"></i>
+        </button>
+
+        <button class="mood mood_3" id="mood_3">
+            <i class="fa-regular fa-face-meh"></i>
+        </button>
+
+        <button class="mood mood_4" id="mood_4">
+            <i class="fa-regular fa-face-angry"></i>
+        </button>
+
+        <button class="mood mood_5" id="mood_5">
+            <i class="fa-regular fa-face-sad-tear"></i>
+        </button>
+    </div>
+
+    <p>Şimdi aşağıdaki dairelere tıkla</p>
+
+    <button id="clear" class="action_btn clear">
+        <i class="fas fa-sync"></i>
+    </button>
+
+    <div id="calendar" class="calendar"></div>
+</body>
+
+</html>
