@@ -76,7 +76,7 @@ p {
 	color: var(--mood-color-3);
 }
 
-.mood_4 {
+.mood_4 {   
 	color: var(--mood-color-4);
 }
 
@@ -89,7 +89,7 @@ p {
 }
 
 .mood.selected i {
-	color: #7f7c7c;
+	color: #b6afaf;
 }
 
 .mood:active {
