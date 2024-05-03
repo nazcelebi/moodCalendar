@@ -15,7 +15,7 @@ const months = [
     'Aralık'
 ];
 const colors = ['#2d6b5f', '#72e3a6', '#dff4c7', '#edbf98', '#ea3d36'];
-const defaultColor = '#888';
+const defaultColor = '#d3cfcf';
 let activeColor = '';
 
 const calendar = document.getElementById('calendar');
@@ -66,6 +66,7 @@ months.forEach((month, idx) => {
         <div class="week_days_container">
         ${weekDays.map(day => `<div class="week_days">${day}</div>`).join('')} </div>
         <div class="days_container"></div>
+
     </div>`;
 });
 
@@ -100,6 +101,13 @@ circles.forEach(circle => {
 function getRandomColor() {
     return colors[Math.floor(Math.random() * 5)];
 }
+
+clear.addEventListener('click', () => {
+	circles.forEach(circle => {
+		circle.style.backgroundColor = defaultColor;
+	});
+});
+
 
 function createDateEl(date) {
     const day = date.getDate();
